@@ -172,12 +172,6 @@ def main():
     print(f"Arquivos encontrados: {len(audio_files)}")
     print(f"Destino: {output_dir}")
 
-    confirm = input("\nIniciar processamento? (s/n): ").strip().lower()
-
-    if confirm != "s":
-        print("Cancelado.")
-        return
-
     for index, audio_file in enumerate(audio_files, start=1):
         print(f"\n=== ARQUIVO {index}/{len(audio_files)} ===")
         try:
